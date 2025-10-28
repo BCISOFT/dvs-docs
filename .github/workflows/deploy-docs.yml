@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'documentation/**'
+      - '**'
       - '.github/workflows/deploy-docs.yml'
   workflow_dispatch:
 
@@ -26,16 +26,14 @@ jobs:
           node-version: '20'
       
       - name: Install dependencies
-        working-directory: documentation
         run: npm install
       
       - name: Build documentation
-        working-directory: documentation
         run: npm run build
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./documentation/build
+          publish_dir: ./build
           cname: docs.devspaces.cloud
