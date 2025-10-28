@@ -65,12 +65,14 @@ docs/
 
 ## Déploiement
 
-La documentation est automatiquement déployée via GitHub Actions lors d'un push sur `main` avec des modifications dans `docs/**`.
+La documentation est automatiquement déployée via GitHub Actions lors d'un push sur `main` avec des modifications dans `documentation/**`.
 
 Le workflow `.github/workflows/deploy-docs.yml` :
 1. Installe les dépendances
 2. Build la documentation
-3. Déploie via FTP vers `docs.devspaces.cloud`
+3. Déploie sur GitHub Pages → `docs.devspaces.cloud`
+
+Pour la configuration initiale, voir **[GITHUB_PAGES_SETUP.md](GITHUB_PAGES_SETUP.md)**
 
 ## Scripts npm
 
