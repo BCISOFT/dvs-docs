@@ -34,9 +34,13 @@ const config = {
     localeConfigs: {
       en: {
         label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
       },
       fr: {
         label: 'Français',
+        direction: 'ltr',
+        htmlLang: 'fr-FR',
       },
     },
   },
@@ -95,7 +99,7 @@ const config = {
           items: [
             {
               label: 'Installation',
-              to: '/getting-started/installation',
+              to: '/docs/getting-started/installation',
             },
           ],
         },

@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import styles from './index.module.css';
+import styles from '../index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -18,13 +18,13 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/getting-started/installation">
-            🚀 Get started
+            🚀 Commencer
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
             to="/docs/getting-started/installation"
             style={{marginLeft: '1rem'}}>
-            📖 View documentation
+            📖 Voir la documentation
           </Link>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="DevSpaces Documentation - Instant development environments">
+      description="Documentation DevSpaces - Environnements de développement instantanés">
       <HomepageHeader />
       <main>
         <section className={styles.features}>
@@ -46,20 +46,20 @@ export default function Home() {
               <div className="col col--4 margin-vert--md">
                 <div className="card">
                   <div className="card__header">
-                    <h3>🚀 Fast</h3>
+                    <h3>🚀 Rapide</h3>
                   </div>
                   <div className="card__body">
-                    <p>Launch a complete development environment with a single command.</p>
+                    <p>Lancez un environnement de développement complet avec une seule commande.</p>
                   </div>
                 </div>
               </div>
               <div className="col col--4 margin-vert--md">
                 <div className="card">
                   <div className="card__header">
-                    <h3>🔒 Secure</h3>
+                    <h3>🔒 Sécurisé</h3>
                   </div>
                   <div className="card__body">
-                    <p>Automatic SSL certificates for all your local services.</p>
+                    <p>Certificats SSL automatiques pour tous vos services locaux.</p>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function Home() {
                     <h3>📦 Simple</h3>
                   </div>
                   <div className="card__body">
-                    <p>Intuitive CLI interface, no complex configuration.</p>
+                    <p>Interface CLI intuitive, aucune configuration complexe.</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Home() {
         </section>
 
         <section className={clsx('container padding-vert--lg')}>
-          <h2 className="text--center margin-bottom--lg">Installation in one command</h2>
+          <h2 className="text--center margin-bottom--lg">Installation en une seule commande</h2>
           <div className="text--center">
             <div className="card margin-vert--md" style={{backgroundColor: 'var(--ifm-color-emphasis-100)'}}>
               <div className="card__body" style={{padding: '1rem'}}>
@@ -90,7 +90,7 @@ export default function Home() {
             <Link
               className="button button--primary button--lg"
               to="/docs/getting-started/installation">
-              Complete installation guide →
+              Guide d'installation complet →
             </Link>
           </div>
         </section>
@@ -98,4 +98,3 @@ export default function Home() {
     </Layout>
   );
 }
-
