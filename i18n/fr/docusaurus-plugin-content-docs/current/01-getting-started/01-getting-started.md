@@ -71,7 +71,7 @@ dvs create prestashop -w 'www' -i 8.2.2 -p 7.2 -l fr -c FR
 
 ## Commandes dvsctl
 
-Pour une documentation détaillée sur toutes les commandes `dvsctl` disponibles, consultez la [Référence des commandes dvsctl](../02-control-commands/02-control-commands).
+Pour une documentation détaillée sur toutes les commandes `dvsctl` disponibles, consultez la [Référence des commandes dvsctl](/docs/control-commands/).
 
 ## Résolution de problèmes
 
