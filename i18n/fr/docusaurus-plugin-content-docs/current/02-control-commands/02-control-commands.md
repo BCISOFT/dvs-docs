@@ -1,4 +1,4 @@
-# Commandes dvsctl
+# Commandes de gestion
 
 `dvs` fournit des commandes pour gérer votre installation et configuration DevSpaces.
 
