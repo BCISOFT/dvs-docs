@@ -4,7 +4,7 @@ Obtenir le chemin du dossier de l'application.
 
 ## Description
 
-La commande `app-folder` retourne le chemin du dossier pour une application donnée. C'est utile pour les scripts shell et l'automatisation qui ont besoin de connaître l'emplacement des fichiers d'une application.
+La commande `app-folder` retourne le chemin du dossier pour une application donnée. Utilé dans les scripts shell et automatisation pour connaître l'emplacement des fichiers d'une application.
 
 ## Utilisation
 
@@ -16,16 +16,6 @@ dvs app-folder <nom-app>
 
 - `<nom-app>` - Le nom de l'application
 
-## Ce qu'elle fait
-
-1. Lit la configuration de l'application depuis le contexte Docker
-2. Extrait la valeur `APP_ROOT` de la configuration
-3. Affiche le chemin (destiné à être utilisé dans les scripts shell)
-
-## Prérequis
-
-- Une installation valide doit exister
-- L'application doit être créée et configurée
 
 ## Exemples
 
@@ -48,5 +38,4 @@ La commande affiche uniquement le chemin, ce qui la rend adaptée à une utilisa
 ## Gestion des erreurs
 
 - Si l'application n'est pas trouvée, la commande retourne une erreur
-- Si `APP_ROOT` n'est pas trouvé dans la config de l'app, la commande retourne une erreur
 

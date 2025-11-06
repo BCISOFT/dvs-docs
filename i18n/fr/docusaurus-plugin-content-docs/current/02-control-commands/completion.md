@@ -16,11 +16,7 @@ dvs completion <shell>
 
 - `<shell>` - Le nom du shell : `bash`, `zsh`, ou `fish`
 
-## Ce qu'elle fait
-
-1. Génère le script de complétion pour le shell spécifié
-2. Affiche le script sur stdout
-3. Le script peut être sauvegardé dans un fichier ou sourcé directement
+Affiche le script sur stdout, le script peut être sauvegardé dans un fichier ou sourcé directement.
 
 ## Prérequis
 

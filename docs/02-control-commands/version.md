@@ -12,24 +12,14 @@ The `version` command displays the current version of the dvsctl binary and rela
 dvs version
 ```
 
-## What it displays
-
-- Current dvsctl version
-- Installation ID (if configured)
-- Organization name (if configured)
-
-## Examples
-
-```bash
-# Display version
-dvs version
-```
-
 ## Output Example
 
 ```
-dvsctl version: 0.3.17
-Installation ID: 42
-Organization: My Company
+dvs version 0.3.24
+Repository: pro
+Installation: MyInstallation
+Organization: My company
+User: xxx@xxx.com (Test User)
+License: pro (monthly) - expires 2025-11-05T09:00:25.044180+00:00
 ```
 

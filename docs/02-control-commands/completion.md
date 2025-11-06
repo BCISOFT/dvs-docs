@@ -16,15 +16,11 @@ dvs completion <shell>
 
 - `<shell>` - The shell name: `bash`, `zsh`, or `fish`
 
-## What it does
-
-1. Generates the completion script for the specified shell
-2. Outputs the script to stdout
-3. The script can be saved to a file or sourced directly
+Outputs the script to stdout, the script can be saved to a file or sourced directly.
 
 ## Prerequisites
 
-- Valid shell name must be provided
+- A valid shell name must be provided
 
 ## Examples
 
@@ -48,5 +44,5 @@ To install completion, use the `dvs install-completion` command, which automatic
 
 ## Related Commands
 
-- `dvs install-completion` - Automatically install completion for current shell
+- `dvs install-completion` - Automatically install completion for the current shell
 

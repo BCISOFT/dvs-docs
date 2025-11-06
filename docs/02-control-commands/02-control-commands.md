@@ -1,8 +1,8 @@
 # Control commands
 
-`dvsctl` (also accessible via `dvs`) provides commands to manage your DevSpaces installation and configuration.
+`dvs` provides commands to manage your DevSpaces installation and configuration.
 
-## Available Commands
+## Available Control Commands
 
 - **[install](install)** - Install and activate a DVS license
 - **[sync](sync)** - Sync configuration with server
@@ -24,7 +24,7 @@ All commands are accessible via the `dvs` command:
 dvs <command>
 ```
 
-For Docker proxy commands (admin, services, applications), use:
+For application commands (admin, services, applications, recipes), use:
 
 ```bash
 dvs help
