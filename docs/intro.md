@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# DevSpaces Documentation
+# Documentation
 
 Welcome to DevSpaces documentation.
 

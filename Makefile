@@ -26,6 +26,14 @@ start:
 	@echo "🚀 Starting Docusaurus development server..."
 	@npm start
 
+start-en:
+	@echo "🚀 Starting Docusaurus EN development server..."
+	@npm run start -- --locale en
+
+start-fr:
+	@echo "🚀 Starting Docusaurus FR development server..."
+	@npm run start -- --locale fr
+
 # Stop development server (if running)
 stop:
 	@echo "🛑 Stopping development server..."

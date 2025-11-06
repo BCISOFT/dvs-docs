@@ -17,12 +17,12 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/getting-started/installation">
+            to="/docs/getting-started/">
             🚀 Get started
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
-            to="/docs/getting-started/installation"
+            to="/docs/intro"
             style={{marginLeft: '1rem'}}>
             📖 View documentation
           </Link>
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <Link
               className="button button--primary button--lg"
-              to="/docs/getting-started/installation">
+              to="/docs/intro">
               Complete installation guide →
             </Link>
           </div>
