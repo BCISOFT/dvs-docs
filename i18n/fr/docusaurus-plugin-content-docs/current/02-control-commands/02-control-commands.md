@@ -15,6 +15,7 @@
 - **[completion](completion)** - Générer les scripts de complétion shell
 - **[install-completion](install-completion)** - Installer la complétion pour le shell actuel
 - **[upgrade](upgrade)** - Mettre à jour vers la dernière version
+- **[check-upgrade](check-upgrade)** - Vérifie si une mise à jour est disponible
 
 ## Utilisation
 
