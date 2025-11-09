@@ -1,4 +1,4 @@
-# Control commands
+# Control
 
 `dvs` provides commands to manage your DevSpaces installation and configuration.
 

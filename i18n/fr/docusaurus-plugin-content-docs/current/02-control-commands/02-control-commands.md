@@ -1,8 +1,8 @@
-# Commandes de gestion
+# Gestion
 
 `dvs` fournit des commandes pour gérer votre installation et configuration DevSpaces.
 
-## Commandes de contrôle isponibles
+## Commandes de contrôle disponibles
 
 - **[install](install)** - Installer et activer une licence DVS
 - **[sync](sync)** - Synchroniser la configuration avec le serveur
