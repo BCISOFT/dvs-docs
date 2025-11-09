@@ -37,7 +37,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           cname: docs.devspaces.cloud
-      - name: Slack repoart Status
+      - name: Slack report Status
         uses: ravsamhq/notify-slack-action@v2
         if: always()
         with:
