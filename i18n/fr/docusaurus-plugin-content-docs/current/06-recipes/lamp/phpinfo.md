@@ -1,9 +1,5 @@
 # phpinfo
 
-## Recette de base
-
-Aucune
-
 ## Usage
 
 ```bash

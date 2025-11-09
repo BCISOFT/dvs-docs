@@ -1,9 +1,5 @@
 # db-export
 
-## Base Recipe
-
-None
-
 ## Usage
 
 ```bash

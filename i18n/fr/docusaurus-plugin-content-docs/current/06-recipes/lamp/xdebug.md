@@ -1,9 +1,5 @@
 # xdebug
 
-## Recette de base
-
-Aucune
-
 ## Usage
 
 ```bash

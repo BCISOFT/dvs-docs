@@ -1,9 +1,5 @@
 # db-import
 
-## Recette de base
-
-Aucune
-
 ## Usage
 
 ```bash

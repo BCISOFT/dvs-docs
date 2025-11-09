@@ -1,9 +1,5 @@
 # mysql
 
-## Base Recipe
-
-None
-
 ## Usage
 
 ```bash

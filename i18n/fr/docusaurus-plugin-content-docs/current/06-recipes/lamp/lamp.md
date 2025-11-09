@@ -13,3 +13,7 @@ Ensemble d'outil adapté à une application LAMP standard: PHP / Apache / mySQL
 - **[php](php)** - Raccourci vers la commande `php`
 - **[db-import](db-import)** - Import d'une sauvegarde base de données
 - **[db-export](db-export)** - Création d'une sauvegarde base de données
+
+## Recette de base
+
+Aucune

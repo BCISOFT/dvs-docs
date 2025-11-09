@@ -1,9 +1,5 @@
 # php
 
-## Recette de base
-
-Aucune
-
 ## Usage
 
 ```bash

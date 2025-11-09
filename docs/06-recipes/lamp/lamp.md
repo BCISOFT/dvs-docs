@@ -13,3 +13,7 @@ Set of tools adapted to a standard LAMP application: PHP / Apache / MySQL
 - **[php](php)** - Shortcut to the `php` command
 - **[db-import](db-import)** - Import a database backup
 - **[db-export](db-export)** - Create a database backup
+
+## Base Recipe
+
+None

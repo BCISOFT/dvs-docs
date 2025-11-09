@@ -1,9 +1,5 @@
 # composer
 
-## Base Recipe
-
-None
-
 ## Usage
 
 ```bash
