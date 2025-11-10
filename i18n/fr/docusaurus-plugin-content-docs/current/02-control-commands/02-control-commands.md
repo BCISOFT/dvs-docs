@@ -11,11 +11,17 @@
 - **[clean](clean)** - Supprimer la configuration locale (sans appeler l'API)
 - **[version](version)** - Afficher la version
 - **[app-folder](app-folder)** - Obtenir le chemin du dossier de l'application
+- **[activate](activate)** - Activer une application
+- **[deactivate](deactivate)** - Désactiver l'application en cours
 - **[generate-wrapper](generate-wrapper)** - Générer le fichier wrapper.sh
 - **[completion](completion)** - Générer les scripts de complétion shell
 - **[install-completion](install-completion)** - Installer la complétion pour le shell actuel
 - **[upgrade](upgrade)** - Mettre à jour vers la dernière version
 - **[check-upgrade](check-upgrade)** - Vérifie si une mise à jour est disponible
+
+## Ressources supplémentaires
+
+- **[Personnalisation du Prompt](prompt-customization)** - Personnaliser votre prompt pour afficher l'application active
 
 ## Utilisation
 
