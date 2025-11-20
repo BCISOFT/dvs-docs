@@ -4,7 +4,7 @@
 
 Gestion des services dvs. Les services sont des outils utilisé par les différentes applications.
 
-## Commndes
+## Commandes
 
 - **[service-install](service-install)** - Installe un service
 - **[service-start](service-start)** - Démarre un service

@@ -14,7 +14,7 @@ dvs repo [option]
 - `public`: utilisation du registre public (offre Solo)
 - `beta`: utilisation du registre des versions Beta (accès restreint)
 - `pro`: Utilisation du registre pro (accès restreint), connexion automatique pour les plans pro
-- `sync`: Utilisé dans le cadre de la commande `dvs sync` pour la connexion au regitre, utilisation interne
+- `sync`: Utilisé dans le cadre de la commande `dvs sync` pour la connexion au registre, utilisation interne
 
 ## Commandes associées
 
