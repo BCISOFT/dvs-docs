@@ -11,8 +11,7 @@
 - **[clean](clean)** - Delete local configuration (without calling the API)
 - **[version](version)** - Display version
 - **[app-folder](app-folder)** - Get the application folder path
-- **[activate](activate)** - Activate an application for dvs admin commands
-- **[deactivate](deactivate)** - Deactivate the currently active application
+- **[active-app](active-app)** - Control active application via environment variable
 - **[generate-wrapper](generate-wrapper)** - Generate wrapper.sh file
 - **[completion](completion)** - Generate shell completion scripts
 - **[install-completion](install-completion)** - Install completion for current shell

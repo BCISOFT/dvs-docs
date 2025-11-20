@@ -26,3 +26,19 @@ cd "$(dvs app-folder myapp)"
 
 - Si l'application n'est pas trouvée, la commande ne fait rien
 
+
+## Astuce
+
+Vous pouvez combiner l'activation d'une application et le changement de dossier. Par exemple la fonction bash `dw` ci-dessous permet d'effectuer ces deux opérations en une seule commande:
+
+```bash
+dw() {
+  if [[ $# -ne 1 ]]; then
+    echo "usage: dw <app>"
+    exit 1
+  fi
+  local app="$1"
+  export DVS_ACTIVE_APP=$app
+  cd "$(dvs app-folder $app)"
+}
+```
