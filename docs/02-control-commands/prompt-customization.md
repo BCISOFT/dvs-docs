@@ -4,7 +4,7 @@ Customize your shell prompt to display the active DVS application.
 
 ## Overview
 
-When you activate an application with `dvs activate <app>`, DVS automatically adds an indicator to your shell prompt showing the active app name: `(dvs:app-name)`.
+When you set the `DVS_ACTIVE_APP` environment variable, DVS automatically adds an indicator to your shell prompt showing the active app name: `(dvs:app-name)`.
 
 This indicator is compatible with most shell configurations and custom prompts (OhMyZsh, Starship, etc.).
 
@@ -12,7 +12,7 @@ This indicator is compatible with most shell configurations and custom prompts (
 
 The prompt indicator is automatically added by the DVS wrapper script (`~/.config/devspaces/helpers/wrapper.sh`) when:
 
-1. An app is activated (`dvs activate <app>`)
+1. The `DVS_ACTIVE_APP` environment variable is set to a valid app name
 2. The `DVS_PROMPT_DISABLE` environment variable is not set to `1`
 
 The integration uses shell hooks to avoid breaking custom prompts:
@@ -50,8 +50,8 @@ For a more integrated experience with Starship, you can add a custom module to y
 
 ```toml
 [custom.dvs]
-command = "cat ~/.config/devspaces/config 2>/dev/null | grep '^DVS_ACTIVE_APP=' | cut -d'=' -f2"
-when = "test -f ~/.config/devspaces/config"
+command = "echo $DVS_ACTIVE_APP"
+when = "test -n \"$DVS_ACTIVE_APP\""
 format = "[$symbol($output )]($style)"
 symbol = "🅐 "
 style = "bold green"
@@ -66,11 +66,8 @@ For OhMyZsh themes, you can customize the prompt by adding to your `~/.zshrc`:
 ```bash
 # DVS app indicator for OhMyZsh
 _dvs_prompt_app() {
-    if [ -f ~/.config/devspaces/config ]; then
-        source ~/.config/devspaces/config
-        if [ -n "$DVS_ACTIVE_APP" ]; then
-            echo "%F{green}(dvs:$DVS_ACTIVE_APP)%f "
-        fi
+    if [ -n "$DVS_ACTIVE_APP" ]; then
+        echo "%F{green}(dvs:$DVS_ACTIVE_APP)%f "
     fi
 }
 
@@ -89,12 +86,8 @@ For other custom prompt systems, you need to read the active app dynamically eac
 ```bash
 # Function to get active app (called before each prompt)
 _dvs_get_active_app() {
-    if [ -f ~/.config/devspaces/config ]; then
-        # Read DVS_ACTIVE_APP from config file
-        DVS_ACTIVE_APP=$(grep '^DVS_ACTIVE_APP=' ~/.config/devspaces/config 2>/dev/null | cut -d'=' -f2)
-        if [ -n "$DVS_ACTIVE_APP" ]; then
-            echo "(dvs:$DVS_ACTIVE_APP) "
-        fi
+    if [ -n "$DVS_ACTIVE_APP" ]; then
+        echo "(dvs:$DVS_ACTIVE_APP) "
     fi
 }
 
@@ -110,11 +103,8 @@ PS1='$DVS_APP_INDICATOR'"$PS1"
 ```bash
 # Function to get active app (called before each prompt)
 _dvs_get_active_app() {
-    if [ -f ~/.config/devspaces/config ]; then
-        DVS_ACTIVE_APP=$(grep '^DVS_ACTIVE_APP=' ~/.config/devspaces/config 2>/dev/null | cut -d'=' -f2)
-        if [ -n "$DVS_ACTIVE_APP" ]; then
-            echo "%F{green}(dvs:$DVS_ACTIVE_APP)%f "
-        fi
+    if [ -n "$DVS_ACTIVE_APP" ]; then
+        echo "%F{green}(dvs:$DVS_ACTIVE_APP)%f "
     fi
 }
 
@@ -134,11 +124,8 @@ PROMPT='$DVS_APP_INDICATOR'"$PROMPT"
 ```fish
 # Function to get active app
 function _dvs_get_active_app
-    if test -f ~/.config/devspaces/config
-        set -l active_app (grep '^DVS_ACTIVE_APP=' ~/.config/devspaces/config 2>/dev/null | cut -d'=' -f2)
-        if test -n "$active_app"
-            echo -n "(dvs:$active_app) "
-        end
+    if test -n "$DVS_ACTIVE_APP"
+        echo -n "(dvs:$DVS_ACTIVE_APP) "
     end
 end
 
@@ -149,7 +136,7 @@ function fish_prompt
 end
 ```
 
-**Important:** The key is to read the config file dynamically each time the prompt is displayed, not just once at shell startup. This ensures the indicator updates immediately when you run `activate` or `deactivate`.
+**Important:** The `DVS_ACTIVE_APP` environment variable is read directly from your shell environment. The indicator updates immediately when you set or unset the variable.
 
 ## Environment Variable
 
@@ -176,7 +163,7 @@ export DVS_PROMPT_DISABLE=0
 
 ## Updating the Prompt
 
-After activating or deactivating an app, the prompt indicator updates automatically. However, if you don't see the change:
+After setting or unsetting `DVS_ACTIVE_APP`, the prompt indicator updates automatically. However, if you don't see the change:
 
 1. **Restart your shell** (open a new terminal)
 2. **Or reload the wrapper script:**
@@ -186,5 +173,4 @@ After activating or deactivating an app, the prompt indicator updates automatica
 
 ## See Also
 
-- [dvs activate](./activate.md) - Activate an application
-- [dvs deactivate](./deactivate.md) - Deactivate the active app
+- [Active Application](./active-app.md) - Control active application via environment variable

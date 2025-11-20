@@ -11,8 +11,7 @@
 - **[clean](clean)** - Supprimer la configuration locale (sans appeler l'API)
 - **[version](version)** - Afficher la version
 - **[app-folder](app-folder)** - Obtenir le chemin du dossier de l'application
-- **[activate](activate)** - Activer une application
-- **[deactivate](deactivate)** - Désactiver l'application en cours
+- **[active-app](active-app)** - Contrôler l'application active via variable d'environnement
 - **[generate-wrapper](generate-wrapper)** - Générer le fichier wrapper.sh
 - **[completion](completion)** - Générer les scripts de complétion shell
 - **[install-completion](install-completion)** - Installer la complétion pour le shell actuel
