@@ -42,5 +42,5 @@ macOS gère les permissions de fichiers différemment de Linux. Si vous rencontr
 - Assurez-vous que votre utilisateur a les permissions de lecture/écriture sur les répertoires de projet
 - Certaines opérations peuvent nécessiter des permissions élevées selon la configuration de votre système
 
-Pour les problèmes de permissions généraux, consultez la page [Permissions](/docs/08-faq/permissions).
+Pour les problèmes de permissions généraux, consultez la page [Permissions](/docs/faq/permissions).
 
