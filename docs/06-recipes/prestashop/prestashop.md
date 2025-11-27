@@ -13,6 +13,7 @@ Commands available with the PrestaShop recipe
 - **[anonymize](anonymize)** - Anonymize database data
 - **[employee-list](employee-list)** - List employee accounts
 - **[employee-password](employee-password)** - Change an employee account password
+- **[img-proxy](img-proxy)** - Image proxy management
 
 ## Base recipe
 
