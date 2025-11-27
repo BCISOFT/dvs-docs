@@ -49,7 +49,7 @@ When accessing files from Windows (`/mnt/c/...`), be aware that:
 - Some operations may require elevated permissions
 - It's recommended to work within the WSL2 file system (`/home/...`) to avoid permission issues
 
-For general permission issues, see the [Permissions](/docs/08-faq/permissions) page.
+For general permission issues, see the [Permissions](/docs/faq/permissions) page.
 
 ### Windows Firewall and Antivirus
 

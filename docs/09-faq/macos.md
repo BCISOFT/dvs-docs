@@ -42,5 +42,5 @@ macOS handles file permissions differently from Linux. If you encounter permissi
 - Ensure your user has read/write permissions on project directories
 - Some operations may require elevated permissions depending on your system configuration
 
-For general permission issues, see the [Permissions](/docs/08-faq/permissions) page.
+For general permission issues, see the [Permissions](/docs/faq/permissions) page.
 

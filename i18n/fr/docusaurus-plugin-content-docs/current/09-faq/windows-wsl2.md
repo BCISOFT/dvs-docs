@@ -49,7 +49,7 @@ Lors de l'accès aux fichiers depuis Windows (`/mnt/c/...`), notez que :
 - Certaines opérations peuvent nécessiter des permissions élevées
 - Il est recommandé de travailler dans le système de fichiers WSL2 (`/home/...`) pour éviter les problèmes de permissions
 
-Pour les problèmes de permissions généraux, consultez la page [Permissions](/docs/08-faq/permissions).
+Pour les problèmes de permissions généraux, consultez la page [Permissions](/docs/faq/permissions).
 
 ### Pare-feu Windows et antivirus
 

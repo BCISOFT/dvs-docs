@@ -40,5 +40,5 @@ ls -la /path/to/project
 
 ### WSL2 Specific
 
-When using WSL2, see the [Windows WSL2](/docs/08-faq/windows-wsl2) page for specific file permission considerations when accessing Windows files.
+When using WSL2, see the [Windows WSL2](/docs/faq/windows-wsl2) page for specific file permission considerations when accessing Windows files.
 
