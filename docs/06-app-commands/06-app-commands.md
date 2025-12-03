@@ -15,5 +15,6 @@ Application management.
 - **[destroy](destroy)** - Destroys a Docker image of an application
 - **[app-folder](app-folder)** - Returns the path of an application
 - **[shell](shell)** - Opens a shell in the application container
+- **[exec](exec)** - Executes a command in the application container
 - **[dump-config](dump-config)** - Exports an application's configuration
 - **[logs](logs)** - Displays application logs
