@@ -9,6 +9,7 @@ Management of dvs services. Services are tools used by different applications.
 - **[service install](service-install)** - Install a service
 - **[service start](service-start)** - Start a service
 - **[service stop](service-stop)** - Stop a service
+- **[service config](service-config)** - Configure a service
 - **[service rebuild](service-rebuild)** - Rebuild the docker image of the service
 - **[service uninstall](service-uninstall)** - Uninstall the service
 

@@ -9,6 +9,7 @@ Gestion des services dvs. Les services sont des outils utilisé par les différe
 - **[service install](service-install)** - Installe un service
 - **[service start](service-start)** - Démarre un service
 - **[service stop](service-stop)** - Stoppe un service
+- **[service config](service-config)** - Configure un service
 - **[service rebuild](service-rebuild)** - Reconstruit l'image docker du service
 - **[service uninstall](service-uninstall)** - Déinstalle le service
 
