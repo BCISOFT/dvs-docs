@@ -6,6 +6,7 @@ Gestion des services dvs. Les services sont des outils utilisé par les différe
 
 ## Commandes
 
+- **[service list](service-list)** - Liste les services disponibles et leur statut
 - **[service install](service-install)** - Installe un service
 - **[service start](service-start)** - Démarre un service
 - **[service stop](service-stop)** - Stoppe un service

@@ -6,6 +6,7 @@ Management of dvs services. Services are tools used by different applications.
 
 ## Commands
 
+- **[service list](service-list)** - List available services and their status
 - **[service install](service-install)** - Install a service
 - **[service start](service-start)** - Start a service
 - **[service stop](service-stop)** - Stop a service
