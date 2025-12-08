@@ -6,6 +6,7 @@ Commands available with the WordPress recipe
 
 ## Commands
 
+- **[auto-login](auto-login)** - One-click admin access
 - **[update-appconfig](update-appconfig)** - Updates the configuration for use with `dvs`
 - **[debug-mode](debug-mode)** - Enable or disable WordPress debug mode
 - **[wp](wp)** - Shortcut to the `wp-cli` command

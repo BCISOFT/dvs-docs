@@ -6,6 +6,7 @@ Commands available with the PrestaShop recipe
 
 ## Commands
 
+- **[auto-login](auto-login)** - One-click admin access
 - **[update-appconfig](update-appconfig)** - Updates configuration for use with `dvs`
 - **[console](console)** - Shortcut to PrestaShop console
 - **[debug-mode](debug-mode)** - Enable or disable PrestaShop debug

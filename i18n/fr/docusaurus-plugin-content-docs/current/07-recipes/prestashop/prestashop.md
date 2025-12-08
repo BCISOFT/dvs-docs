@@ -6,9 +6,10 @@ Commandes utilisables avec la recette Prestashop
 
 ## Commands
 
+- **[auto-login](auto-login)** - Accès admin en un clic
 - **[update-appconfig](update-appconfig)** - Met à jour la configuration pour l'utilisation avec `dvs`
 - **[console](console)** - Raccourci vers la console Prestashop
-- **[debug-mode](debug-mode)** - Active ou désactive le debug prestashop
+- **[debug-mode](debug-mode)** - Active ou désactive le debug Prestashop
 - **[cache](cache)** - Active ou désactive le cache smarty
 - **[anonymize](anonymize)** - Anonymise les données de la base de données
 - **[employee-list](employee-list)** - Liste les comptes employés
