@@ -71,7 +71,7 @@ const config = {
       title: 'DevSpaces',
       logo: {
         alt: 'DevSpaces Logo',
-        src: 'img/logo.svg',
+        src: 'img/dvs.svg',
       },
       items: [
         {
