@@ -3,17 +3,68 @@
 ## Usage
 
 ```bash
-dvs db-export
+dvs db-export [--optimized|--parallel|--compressed|--dump]
 ```
 
-Exports a SQL dump to the application directory.
+Exports the database to the application directory.
 
-## Example
+## Options
+
+| Option | Description | Output |
+|--------|-------------|--------|
+| `--optimized` | Auto-detection based on database size (default) | `.sql.gz` or `.tar.gz` |
+| `--parallel` | Split tables for parallel import | `.tar.gz` (multi-files) |
+| `--compressed` | Single SQL file compressed | `.sql.gz` |
+| `--dump` | Single SQL file uncompressed | `.sql` |
+
+## Optimized mode (default)
+
+Automatically selects the best mode based on database size:
+- Database > 100 MB → parallel mode
+- Database < 100 MB → compressed mode
 
 ```bash
 $ dvs db-export
-Waiting devspaces-mysql-8.0 to be up  ✔
-Database ps821 exported to file ps821-20251109-105844.sql
+Mode: compressed (database < 100 MB)
+Database myapp exported to myapp-20251215-105844.sql.gz
+```
+
+## Parallel mode
+
+Exports the database structure separately from the data (one file per table), enabling parallel import for faster restoration of large databases.
+
+```bash
+$ dvs db-export --parallel
+Mode: parallel
+Database myapp exported to myapp-20251215-105844-parallel.tar.gz
+```
+
+The parallel archive contains:
+- `__00_schema.sql` - Database structure (tables, indexes, etc.)
+- `tablename.sql` - Data for each table
+
+:::note
+Parallel mode is optimized for large databases. For small databases, the overhead may make it slower than compressed mode.
+:::
+
+## Compressed mode
+
+Creates a single SQL dump compressed with gzip.
+
+```bash
+$ dvs db-export --compressed
+Mode: compressed
+Database myapp exported to myapp-20251215-105844.sql.gz
+```
+
+## Dump mode
+
+Creates a single uncompressed SQL file.
+
+```bash
+$ dvs db-export --dump
+Mode: dump
+Database myapp exported to myapp-20251215-105844.sql
 ```
 
 ## See also
