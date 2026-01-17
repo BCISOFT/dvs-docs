@@ -55,6 +55,54 @@ dvs pull backup --dumps --dump-file "2025-01-08_mydb.sql.gz"
 - **None specified**: Interactive multi-select
 - **Explicit**: `--files`, `--database`, `--dumps`
 
+## Custom File Excludes
+
+You can customize which files are excluded or included during pull operations by creating exclude files in `/app/.dvs/remotes/`.
+
+### File Priority
+
+| File | Scope |
+|------|-------|
+| `files.<remote>.excludes` | Specific to a remote (e.g., `files.prod.excludes`) |
+| `files.excludes` | Global for all remotes |
+
+The remote-specific file takes priority over the global one.
+
+### Syntax
+
+```
+# Comments start with #
+# Empty lines are ignored
+
+# Exclude a path (standard)
+path/to/exclude
+
+# Include a path (prefix with !)
+# Useful to include a subfolder of an excluded folder
+!path/to/include
+```
+
+### Example: Include Module Images with img-proxy
+
+When using img-proxy, the `img/` folder is excluded by default. To include a specific module's images:
+
+```bash title="/app/.dvs/remotes/files.excludes"
+# Include module images that are required locally
+!img/mdghomecategorypush_categoryblock
+!img/my_custom_module
+```
+
+This will:
+1. Include `img/mdghomecategorypush_categoryblock/` and all its contents
+2. Include `img/my_custom_module/` and all its contents
+3. Still exclude the rest of `img/` as per recipe defaults
+
+### Path Format
+
+- Paths are relative to the webroot
+- No leading `/` required (e.g., `img/folder` not `/img/folder`)
+- Trailing `/` is optional
+
 ## Recipe Hooks
 
 Recipes can define post-pull transformations:
