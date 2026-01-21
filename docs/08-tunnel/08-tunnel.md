@@ -13,11 +13,7 @@ Available only with subscription.
 - **[tunnel list](tunnel-list)** - List existing tunnels
 - **[tunnel status](tunnel-status)** - Tunnel information
 
+## Customization
 
-## Service list
-
-- `mailpit` - allows intercepting sent emails
-- `mariadb` - SQL database engine
-- `mysql` - SQL database engine
-- `phpmyadmin` - online MySQL database management tool
+- **[Custom Hooks](custom-hooks)** - Execute custom scripts on tunnel start/stop
 
