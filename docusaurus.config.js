@@ -89,6 +89,18 @@ const config = {
           label: 'Website',
           position: 'right',
         },
+        {
+          href: 'https://discord.gg/TvncjBJzkp',
+          position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord',
+        },
+        {
+          href: 'https://github.com/BCISOFT/dvs-community',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub',
+        },
       ],
     },
     footer: {
@@ -113,6 +125,19 @@ const config = {
             {
               label: 'App',
               href: 'https://app.devspaces.cloud',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/TvncjBJzkp',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/BCISOFT/dvs-community',
             },
           ],
         },
