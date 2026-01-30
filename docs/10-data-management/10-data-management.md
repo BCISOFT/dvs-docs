@@ -79,4 +79,5 @@ dvs deploy prod
 | `sftp` | SFTP | Secure file transfer |
 | `ftp` | FTP/FTPS | Legacy servers |
 | `s3` | S3 API | AWS, MinIO |
+| `gdrive` | Google Drive API | Google Drive (OAuth 2.0) |
 | `local` | Local FS | Local directories |

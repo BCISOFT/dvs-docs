@@ -9,7 +9,7 @@ Gestion centralisée des stockages pour les opérations de backup et archive.
 
 ## Concept
 
-Un **storage** est une configuration nommée pointant vers une destination (serveur SSH, bucket S3, chemin local). Utilisé par :
+Un **storage** est une configuration nommée pointant vers une destination (serveur SSH, bucket S3, Google Drive, chemin local). Utilisé par :
 - `dvs archive` - Archives chiffrées
 - `dvs backup` - Sauvegardes incrémentales (PRO)
 
@@ -21,6 +21,7 @@ Un **storage** est une configuration nommée pointant vers une destination (serv
 | `sftp`    | SFTP      | Transfert de fichiers sécurisé |
 | `ftp`     | FTP/FTPS  | Serveurs FTP legacy |
 | `s3`      | S3 API    | AWS S3, MinIO, compatibles |
+| `gdrive`  | Google Drive API | Stockage cloud Google Drive (OAuth 2.0) |
 | `local`   | FS Local  | Répertoires locaux |
 
 ## Démarrage rapide

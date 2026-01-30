@@ -71,12 +71,13 @@ Afficher les paramètres disponibles pour un transport.
 dvs storage params <transport>
 ```
 
-Exemple :
+Exemples :
 ```bash
 dvs storage params ssh
+dvs storage params gdrive
 ```
 
-Sortie :
+Sortie (ssh) :
 ```
 SSH Transport Parameters:
   host     (required)  Server hostname
