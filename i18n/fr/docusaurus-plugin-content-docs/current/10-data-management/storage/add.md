@@ -17,7 +17,7 @@ dvs storage add [name] [options]
 
 | Option | Description |
 |--------|-------------|
-| `--type <transport>` | Type de transport : `ssh`, `sftp`, `ftp`, `s3`, `local` |
+| `--type <transport>` | Type de transport : `ssh`, `sftp`, `ftp`, `s3`, `gdrive`, `local` |
 
 ## Mode interactif
 
@@ -76,6 +76,16 @@ dvs storage set mybackup.default.user admin
 | `password` | Oui | Mot de passe FTP |
 | `path` | Oui | Chemin distant |
 | `tls` | Non | Activer FTPS (true/false) |
+
+### Google Drive (gdrive)
+
+L'authentification utilise OAuth 2.0. Lors de l'ajout d'un storage avec `--type gdrive`, un flux interactif s'ouvre dans le navigateur pour autoriser l'accès à votre Google Drive. Le token est stocké localement dans les secrets DVS ; aucun paramètre manuel n'est requis.
+
+```bash
+dvs storage add mygdrive --type gdrive
+```
+
+Nécessite que DVS soit exécuté avec l'URL de redirection OAuth configurée (par ex. via `dvsctl` ou équivalent). Une seule instance admin doit exposer le callback OAuth pour que le flux se termine correctement.
 
 ### Local
 
